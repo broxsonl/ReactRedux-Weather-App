@@ -17,7 +17,7 @@ export function fetchWeather(city) {
     // Action FETCH_WEATHER.
     type: FETCH_WEATHER,
     //ReduxPromise sees payload is a promise, so it stops the action entirely. When the request finishes, it dispatches a new action with a payload of the resolved request. It's a middleware that handles this payload for us, and sends this to the reducer for us.
-    // This prevents are reducer from having a Promise to deal with instead.
+    // This prevents our reducer from having a Promise to deal with instead.
     payload: request
   };
 }
